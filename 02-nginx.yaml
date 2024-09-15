@@ -1,5 +1,5 @@
 - name: install and run nginx
-  hosts: db
+  hosts: 172.31.24.66
   become: yes
   tasks:
   - name: install nginx
@@ -11,4 +11,4 @@
       name: nginx
       state: started
       enabled: yes
-      
+
