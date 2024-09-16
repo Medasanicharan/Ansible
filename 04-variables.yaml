@@ -2,8 +2,8 @@
   hosts: localhost
   vars:
     course: "devops"
-    cloud: "aws"
-    technology: "ansible"
+    cloud: "aws+azure"
+    technology: "terraform"
   tasks:
   - name: print information
     ansible.builtin.debug:
