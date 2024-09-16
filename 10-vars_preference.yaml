@@ -4,7 +4,7 @@
     PERSON: "Charan"
     WISHES: "Morning"
   vars_files:
-    -vars.yaml
+    - vars.yaml
   vars_prompts:
     - name: PERSON
       prompt: please enter person
