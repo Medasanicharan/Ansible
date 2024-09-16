@@ -1,9 +1,9 @@
 - name: variables
   hosts: localhost
   vars:
-    course: devops
-    cloud: aws
-    technology: ansible
+    course: "devops"
+    cloud: "aws"
+    technology: "ansible"
   task:
   - name: print information
     ansible.builtin.debug:
