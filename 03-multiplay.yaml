@@ -3,11 +3,11 @@
   tasks:
   - name: play-1 and task-1
     ansible.builtin.debug:
-    msg: "hello, am charan"
+      msg: "hello, am charan"
 
 - name: play-2
   hosts: localhost
   tasks:
   - name: play-2 and task-1
     ansible.builtin.debug:
-    msg: "hello, am learning devops"
+      msg: "hello, am learning devops"
