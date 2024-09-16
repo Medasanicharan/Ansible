@@ -1,0 +1,12 @@
+- name: variables
+  hosts: localhost
+  vars:
+    course: "devops"
+    cloud: "aws+azure"
+    technology: "terraform"
+  tasks:
+  - name: print information
+    vars:
+      technology: "ansible"
+    ansible.builtin.debug:
+      msg: "Hi, we are learning {{technology}} & {{course}} with {{cloud}}"
