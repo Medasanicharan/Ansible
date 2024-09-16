@@ -9,7 +9,7 @@
     - name: PERSON
       prompt: please enter person
       private: false
-     - name: WISHES
+    - name: WISHES
       prompt: please enter wishes
       private: false
   tasks: 
