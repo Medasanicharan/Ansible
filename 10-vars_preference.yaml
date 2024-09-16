@@ -1,8 +1,8 @@
 - name: variables to check preference
   hosts: localhost
   vars:
-    PERSON: "Charan"
-    WISHES: "Morning"
+    PERSON: "Charan1"
+    WISHES: "Morning1"
   vars_files:
     - vars.yaml
   vars_prompt:
@@ -15,7 +15,7 @@
   tasks: 
   - name: preference
     vars:
-      PERSON: "Charan"
-      WISHES: "Morning"
+      PERSON: "Charan2"
+      WISHES: "Morning2"
     ansible.builtin.debug:
       msg: "hello {{PERSON}},Good {{WISHES}}" 
