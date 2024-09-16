@@ -4,4 +4,4 @@
   - name: print information
     ansible.builtin.debug:
       msg: "Hi, we are learning {{tech}} & {{course}} with {{cloud}}"
-            "timeings are {{time}}"
+      msg: "timeings are {{time}}"
