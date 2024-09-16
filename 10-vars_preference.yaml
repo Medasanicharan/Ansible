@@ -1,8 +1,8 @@
 - name: variables to check preference
   hosts: localhost
-  vars:
-    PERSON: "Charan1"
-    WISHES: "Morning1"
+  # vars:
+  #   PERSON: "Charan1"
+  #   WISHES: "Morning1"
   # vars_files:
   #   - vars.yaml
   # vars_prompt:
@@ -23,4 +23,5 @@
   #1.argumesnts
   #2.task
   #3.var_files
-  #prompt
+  #4.prompt
+  #5.play
