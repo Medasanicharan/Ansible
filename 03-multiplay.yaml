@@ -5,7 +5,7 @@
     ansible.builtin.debug:
     msg: "hello, am charan"
 
-- name: plat-2
+- name: play-2
   hosts: localhost
   tasks:
   - name: play-2 and task-1
