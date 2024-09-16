@@ -14,8 +14,8 @@
       private: false
   tasks: 
   - name: preference
-      vars:
-        PERSON: "Charan"
-        WISHES: "Morning"
+    vars:
+      PERSON: "Charan"
+      WISHES: "Morning"
     ansible.builtin.debug:
       msg: "hello {{PERSON}},Good {{WISHES}}" 
