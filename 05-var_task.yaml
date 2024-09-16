@@ -5,8 +5,12 @@
     cloud: "aws+azure"
     technology: "terraform"
   tasks:
-  - name: print information
+  - name: print information override
     vars:
       technology: "ansible"
+    ansible.builtin.debug:
+      msg: "Hi, we are learning {{technology}} & {{course}} with {{cloud}}"
+
+  - name: print information
     ansible.builtin.debug:
       msg: "Hi, we are learning {{technology}} & {{course}} with {{cloud}}"
