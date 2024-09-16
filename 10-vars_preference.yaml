@@ -3,8 +3,8 @@
   vars:
     PERSON: "Charan1"
     WISHES: "Morning1"
-  vars_files:
-    - vars.yaml
+  # vars_files:
+  #   - vars.yaml
   vars_prompt:
     - name: PERSON
       prompt: please enter person
@@ -14,9 +14,12 @@
       private: false
   tasks: 
   - name: preference
+    # vars:
+    #   PERSON: "Charan2"
+    #   WISHES: "Morning2"
     ansible.builtin.debug:
       msg: "hello {{PERSON}},Good {{WISHES}}" 
 
   #1.argumesnts
   #2.task
-  #3.
+  #3.var_files
