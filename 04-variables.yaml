@@ -4,7 +4,7 @@
     course: "devops"
     cloud: "aws"
     technology: "ansible"
-  task:
+  tasks:
   - name: print information
     ansible.builtin.debug:
       msg: "Hi, we are learning {{technology}} & {{course}} with {{cloud}}"
