@@ -1,0 +1,14 @@
+- name: variables
+  hosts: localhost
+  var_files:
+  - vars.yaml
+  tasks:
+  - name: print information override
+    vars:
+      technology: "ansible"
+    ansible.builtin.debug:
+      msg: "Hi, we are learning {{technology}} & {{course}} with {{cloud}}"
+
+  - name: print information
+    ansible.builtin.debug:
+      msg: "Hi, we are learning {{technology}} & {{course}} with {{cloud}}"
