@@ -5,7 +5,7 @@
     WISHES: "Morning"
   vars_files:
     - vars.yaml
-  vars_prompts:
+  vars_prompt:
     - name: PERSON
       prompt: please enter person
       private: false
