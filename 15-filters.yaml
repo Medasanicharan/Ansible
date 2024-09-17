@@ -4,5 +4,5 @@
     greeting: "Hello, Good Morning"
   tasks: 
   - name: convert the upper case
-  ansible.builtin.debug:
-    msg: "{{ greeting | upper }}"
+    ansible.builtin.debug:
+      msg: "{{ greeting | upper }}"
