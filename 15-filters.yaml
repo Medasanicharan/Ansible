@@ -1,8 +1,15 @@
-- name: upper case
+- name: convert items/list into dictionary 
   hosts: localhost
-  vars: 
-    greeting: "Hello, Good Morning"
+  vars:
+    my_dict:
+    - {'key': 'course', 'value': 'Ansible'}
+    - {'key': 'trainer', 'value': 'Charan'}
+    - {'key': 'duration', 'value': '120hr'}
   tasks: 
-  - name: convert the upper case
+  - name: before conversion
     ansible.builtin.debug:
-      msg: "{{ greeting | upper }}"
+      msg: " Before convert: {{my_dict}}"
+  
+  - name: after conversion
+    ansible.builtin.debug:
+      msg: " after convert: {{my_dict | items2dict}}"
