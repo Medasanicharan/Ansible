@@ -1,0 +1,11 @@
+- name: instal packages
+  hosts: localhost
+  become: yes
+  tasks: 
+  - name: install packages
+    ansible.builtin.dnf:
+      name: "{{item}}"
+      state: latest
+    - mysql
+    - nginx
+    - postfix
