@@ -2,7 +2,7 @@
   hosts: localhost
   vars_prompt:
   - name: number
-    prompt: please enter umber
+    prompt: please enter number
     private: false
   tasks: 
   - name: number is less than 10
