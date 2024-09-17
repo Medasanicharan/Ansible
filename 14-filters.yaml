@@ -22,3 +22,12 @@
   - name: convert the lower case
     ansible.builtin.debug:
       msg: "{{greeting | lower}}"
+
+- name: remove  duplicates
+  hosts: localhost
+  vars:
+    numbers: [1,2,2,3,4,5,5,6,7,7,9,9]
+  tasks: 
+  - name: remove duplicates
+    ansible.builtin.debug:
+      msg: "{{numbers | unique}}"
